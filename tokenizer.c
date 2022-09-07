@@ -13,7 +13,7 @@ char **tokenizer(char *line)
 	int tokensize = 1;
 	size_t index = 0, flag = 0;
 
-	
+	buf = _strdup(line);
 	if (!buf)
 		return (NULL);
 	bufp = buf;
