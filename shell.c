@@ -18,7 +18,7 @@ int main(int ac, char **av, char *envp[])
 	if (ac < 1)
 		return (-1);
 	signal(SIGINT, handle_signal);
-	
+	while (1)
 	{
 		free_buffers(command);
 		free_buffers(paths);
